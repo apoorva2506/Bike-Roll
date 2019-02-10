@@ -1,0 +1,40 @@
+{
+    "UserAgent": "aws-amplify-cli/0.1.0",
+    "Version": "1.0",
+    "IdentityManager": {
+        "Default": {}
+    },
+    "CredentialsProvider": {
+        "CognitoIdentity": {
+            "Default": {
+                "PoolId": "xxxxxxxxxxxxxx",
+                "Region": "us-east-1"
+            }
+        }
+    },
+    "CognitoUserPool": {
+        "Default": {
+            "PoolId": "us-east-1_hmFt2MWr7",
+            "AppClientId": "xxxxxxxxxxxxxx",
+            "AppClientSecret": "xxxxxxxxxxxxxx",
+            "Region": "us-east-1"
+        }
+    },
+    "GoogleSignIn": {
+        "Permissions": "email,profile,openid",
+        "ClientId-WebApp": "xxxxxxxxxxxxxx"
+    },
+    "AppSync": {
+        "Default": {
+            "ApiUrl": "xxxxxxxxxxxxxx",
+            "Region": "us-east-1",
+            "AuthMode": "AMAZON_COGNITO_USER_POOLS"
+        }
+    },
+    "S3TransferUtility": {
+        "Default": {
+            "Bucket": "newspolly",
+            "Region": "us-east-1"
+        }
+    }
+}

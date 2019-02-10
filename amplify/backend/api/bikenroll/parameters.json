@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "bikenroll",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authbikenroll",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "schemaGraphql": "s3://ikeoll-20181217015901-deployment/amplify-appsync-files/schema.graphql.1545035442046",
+    "ResolverBucket": "ikeoll-20181217015901-deployment",
+    "ResolverRootKey": "amplify-appsync-files",
+    "DeploymentTimestamp": "1545035442046"
+}

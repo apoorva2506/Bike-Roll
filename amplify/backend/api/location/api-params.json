@@ -1,0 +1,27 @@
+{
+    "paths": [
+        {
+            "name": "/location",
+            "lambdaArn": "arn:aws:lambda:us-east-1:431657491992:function:allLocations",
+            "lambdaFunction": "allLocations",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "location",
+    "apiName": "bikenroll2657e72e",
+    "functionArns": [
+        {
+            "lambdaFunction": "allLocations",
+            "lambdaArn": "arn:aws:lambda:us-east-1:431657491992:function:allLocations"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "ikeoll-20181217015901-authRole",
+        "unAuthRoleName": "ikeoll-20181217015901-unauthRole"
+    },
+    "dependsOn": []
+}

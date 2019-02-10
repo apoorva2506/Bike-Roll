@@ -1,0 +1,9 @@
+{
+    "bucketName": "newspolly",
+    "authPolicyName": "s3_amplify_920276e4",
+    "unauthPolicyName": "s3_amplify_920276e4",
+    "authRoleName": "ikeoll-20181217015901-authRole",
+    "unauthRoleName": "ikeoll-20181217015901-unauthRole",
+    "authPermissions": "rw",
+    "unauthPermissions": "rw"
+}

@@ -1,0 +1,90 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "ikeoll-20181217015901-authRole",
+			"UnauthRoleArn": "arn:aws:iam::431657491992:role/ikeoll-20181217015901-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::431657491992:role/ikeoll-20181217015901-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "ikeoll-20181217015901-deployment",
+			"UnauthRoleName": "ikeoll-20181217015901-unauthRole",
+			"StackName": "ikeoll-20181217015901",
+			"StackId": "arn:aws:cloudformation:us-east-1:431657491992:stack/ikeoll-20181217015901/3d2526d0-01c9-11e9-adc4-0eb85d5eff94"
+		}
+	},
+	"auth": {
+		"bikenroll": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/ikeoll-20181217015901-deployment/amplify-cfn-templates/auth/bikenroll-cloudformation-template.yml",
+				"logicalId": "authbikenroll"
+			},
+			"lastPushTimeStamp": "2018-12-21T12:52:27.134Z",
+			"output": {
+				"GoogleWebClient": "898073104108-llg31hm9fqhd4u4a5ite3i7gifp3hrou.apps.googleusercontent.com",
+				"AppClientSecret": "ls0nfu47l2vaaqf8rdh61o1i31aabj0gtjvu9snvtt20po5p254",
+				"UserPoolId": "us-east-1_hmFt2MWr7",
+				"AppClientIDWeb": "372tumg68r1mvenu9h16d8st98",
+				"AppClientID": "21sk63nrsj67ij37a3tebggi85",
+				"IdentityPoolId": "us-east-1:07ea123b-dd2e-4638-985e-8c91f36d90ea",
+				"IdentityPoolName": "sneha",
+				"GoogleAndroidClient": "898073104108-5l1jj2gbrd1g2fite72hmngggsbujfev.apps.googleusercontent.com",
+				"UserPoolName": "bikeuserpool"
+			},
+			"lastPushDirHash": "onbCoAvGeXwmEr3YjILyTJYIN4Q=",
+			"[object Object]": {}
+		}
+	},
+	"api": {
+		"bikenroll": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "AMAZON_COGNITO_USER_POOLS",
+				"GraphQLAPIIdOutput": "w4lpbplgpbegpd6ydrzh2k6ipu",
+				"GraphQLAPIEndpointOutput": "https://7hlwc4khsbfmzd33x4pmite2dm.appsync-api.us-east-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-3s6y7uu3ivfsjpsaihd7s2xl6q",
+				"AuthCognitoUserPoolIdOutput": "us-east-1_hmFt2MWr7",
+				"AuthCognitoUserPoolNativeClientId": "See UserPool: us-east-1_hmFt2MWr7",
+				"AuthCognitoUserPoolJSClientId": "See UserPool: us-east-1_hmFt2MWr7"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/ikeoll-20181217015901-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apibikenroll"
+			},
+			"lastPushTimeStamp": "2018-12-21T12:52:27.137Z",
+			"lastPushDirHash": "uAxOkWHQmQn1BSQA8hxKn9BukJo="
+		},
+		"location": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/ikeoll-20181217015901-deployment/amplify-cfn-templates/api/location-cloudformation-template.json",
+				"logicalId": "apilocation"
+			},
+			"lastPushTimeStamp": "2018-12-21T12:52:27.139Z",
+			"output": {
+				"ApiName": "location",
+				"RootUrl": "https://c3561ufjs9.execute-api.us-east-1.amazonaws.com/Prod"
+			},
+			"lastPushDirHash": "ogCqGxplen6ztZbDYc+ux+QNWsM="
+		}
+	},
+	"storage": {
+		"newsPolly": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/ikeoll-20181217015901-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+				"logicalId": "storagenewsPolly"
+			},
+			"lastPushTimeStamp": "2018-12-21T12:52:27.143Z",
+			"output": {
+				"BucketName": "newspolly",
+				"Region": "us-east-1"
+			},
+			"lastPushDirHash": "9dvZWF4a2O5133dq2rR+FILVL1k="
+		}
+	}
+}
